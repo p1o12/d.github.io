@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>含跳转按钮的网页</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease both;
+        }
+
+        a {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease 0.5s both;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>欢迎来到此页面</h1>
+    <a href="http://localhost/code/login.php" target="_blank">点击跳转</a>
+</body>
+
+</html>    
